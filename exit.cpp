@@ -29,6 +29,7 @@ int Exit::useItem(Item* item) {
 		}
 		else {
 			std::cout << "This key doesn't fit this keyhole" << std::endl;
+			return 1;
 		}
 	}
 	else {
