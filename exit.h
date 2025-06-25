@@ -11,9 +11,9 @@ public:
     Room* source;
     Room* destination;
 
-    Exit(const char* name, const char* description, std::string direction, Room* source, Room* destination);
+    Exit(const std::string name, const std::string description, std::string direction, Room* source, Room* destination);
     ~Exit();
     void lookAt();
-    void useItem(Item* item);
+    int useItem(Item* item);
     void beTakenByCreature(Creature* creature);
 };

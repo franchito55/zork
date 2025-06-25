@@ -11,11 +11,13 @@ class Room : public Entity {
 public:
     std::vector<Exit*> exits;
     std::vector<Item*> items;
+    bool locked;
 
-    Room(const char* name, const char* description);
+    Room(const std::string name, const std::string description, bool locked);
     void AddExit(Exit* exit);
     void AddItem(Item* item);
     void lookAt();
-    void useItem(Item* item);
+    int useItem(Item* item);
     void beTakenByCreature(Creature* creature);
+    void explore();
 };

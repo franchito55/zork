@@ -5,6 +5,6 @@ Creature::Creature(const std::string name) : name(name){}
 
 Creature::~Creature() {}
 
-void Creature::takeItem(Entity* item) {
+void Creature::takeItem(Item* item) {
 	this->inventory.push_back(item);
 }

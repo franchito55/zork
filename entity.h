@@ -1,6 +1,7 @@
 #pragma once
+#include <string>
 
-enum EntityType {
+enum class EntityType {
     ROOM,
     ITEM,
     PLAYER,
@@ -9,16 +10,17 @@ enum EntityType {
 
 class Item;
 class Creature;
+class Room;
 
 class Entity {
 public:
-    const char* name;
-    const char* description;
+    const std::string name;
+    const std::string description;
     EntityType entityType;
 
-    Entity(const char* name, const char* description);
+    Entity(const std::string name, const std::string description);
     virtual ~Entity();
     virtual void lookAt();
-    virtual void useItem(Item* i);
-    virtual void beTakenByCreature(Creature* creature);
+    virtual int useItem(Item* item);
+    virtual void beTakenByCreature(Creature* creature, Room* room);
 };
