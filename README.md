@@ -1,4 +1,4 @@
-# ZORK - Juego de aventura de texto
+# ZORK - Text adventure game
 
 ## Author
 - Francisco Barrio
