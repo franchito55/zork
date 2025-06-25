@@ -31,3 +31,12 @@ MIT License
 - Use `look` to get information about things.
 - You might find some locked doors, so think about how to get past them!.
 - Your final objective is to find a scripture. It most likely will be hidden somewhere...
+
+# Some plus stuff
+## What I had trouble with
+I had 2 main problems while developing this project: 
+1. Most importantly and what had the biggest effect was the lack of time, since I didn't choose a good time to do the assignment. 
+2. The fact that I hadn't programmed in C or C++ for around 4 years, so I kind of had to relearn everything to do this. But that was fun since I love learning, so not really complaining about it
+
+Some smaller and more precise problems I had (and some that were even left in the final release!) were:
+1. How to handle user input. I had to build a sort of structure around verbs and objects to handle what the user wanted to do at every point, which required more thought into it than I originally expected. For instance, you will see items have an underscore (_) separating the words. This is because I wanted to challenge myself to include multi-word tokens , but finally I couldn't figure out in time how to handle them properly, so I ended up just leaving them like that.
