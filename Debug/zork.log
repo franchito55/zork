@@ -1,5 +1,5 @@
-﻿  room.cpp
-  world.cpp
+﻿  world.cpp
   zork.cpp
+C:\Users\Fran\Desktop\Programación\cpp\zork\zork\zork.cpp(26,27): warning C4018: '<': no coinciden signed/unsigned
   Generando código...
   zork.vcxproj -> C:\Users\Fran\Desktop\Programación\cpp\zork\zork\Debug\zork.exe

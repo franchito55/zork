@@ -1,21 +1,19 @@
 #pragma once
 #include "entity.h"
+#include <string>
 
 class Room;
-
-enum ExitDirection {
-    NORTH,
-    EAST,
-    SOUTH,
-    WEST
-};
+class Creature;
 
 class Exit : public Entity {
-    public:
-        ExitDirection direction;
-        Room* source;
-        Room* destination;
+public:
+    std::string direction;
+    Room* source;
+    Room* destination;
 
-        Exit(const char* name, const char* description, ExitDirection direction, Room* source, Room* destination);
-        ~Exit();
+    Exit(const char* name, const char* description, std::string direction, Room* source, Room* destination);
+    ~Exit();
+    void lookAt();
+    void useItem(Item* item);
+    void beTakenByCreature(Creature* creature);
 };

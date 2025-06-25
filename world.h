@@ -3,15 +3,15 @@
 #include "room.h"
 
 class World {
-	public:
-		std::vector<Room*> rooms;
-		Room* currentRoom;
-		// TODO
-		// std::vector<Creature*> creatures;
+public:
+	std::vector<Room*> rooms;
+	Room* currentRoom;
+	// TODO
+	// std::vector<Creature*> creatures;
 
-		World();
-		~World();
-		void AddRoom(Room* room);
-		// TODO
-		// void AddCreature(Creature* creature);
+	World();
+	~World();
+	void AddRoom(Room* room);
+	// TODO
+	// void AddCreature(Creature* creature);
 };

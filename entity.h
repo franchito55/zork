@@ -7,12 +7,18 @@ enum EntityType {
     EXIT
 };
 
-class Entity {
-    public:
-        const char* name;
-        const char* description;
-        EntityType entityType;
+class Item;
+class Creature;
 
-        Entity(const char* name, const char* description);
-        virtual ~Entity();
+class Entity {
+public:
+    const char* name;
+    const char* description;
+    EntityType entityType;
+
+    Entity(const char* name, const char* description);
+    virtual ~Entity();
+    virtual void lookAt();
+    virtual void useItem(Item* i);
+    virtual void beTakenByCreature(Creature* creature);
 };
