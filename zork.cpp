@@ -16,8 +16,9 @@ int main()
     bool playing = true;
     // 100 character limit on commands seems more than reasonable
     char playerCommand[100];
-    std::cout << "Welcome to ZORK! In this game, you will have to travel around the map in order to find a key to enter the final room." << std::endl;
+    std::cout << "Welcome to ZORK! In this game, you will have to travel around the map in order to find the scripture of a school you inherited from your father. However, it will probably be somewhere hidden..." << std::endl;
     std::cout << "Please enter your name:" << std::endl;
+    std::cout << "> ";
     char playerName[100];
     std::cin.getline(playerName, 100);
     Player* player = new Player(playerName);
@@ -124,4 +125,7 @@ int main()
             }
         }
     }
+
+    std::cout << "\nPresiona ENTER para salir...";
+    std::cin.get();
 }
